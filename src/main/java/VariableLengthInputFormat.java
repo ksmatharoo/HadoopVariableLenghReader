@@ -49,12 +49,12 @@ public class VariableLengthInputFormat extends FileInputFormat<LongWritable, Byt
         FileSplit fileSplit1 = makeSplit(p,5722,(10664 - 5722),host,host);*/
 
         //test100Rec.bin
-       /* FileSplit fileSplit = makeSplit(p,0,4782,host,host);
-        FileSplit fileSplit1 = makeSplit(p,4782,(10502-4782),host,host);*/
+        FileSplit fileSplit = makeSplit(p,0,4782,host,host);
+        FileSplit fileSplit1 = makeSplit(p,4782,(10502-4782),host,host);
 
         //test10Rec.bin
-         FileSplit fileSplit = makeSplit(p,0,514,host,host);
-        FileSplit fileSplit1 = makeSplit(p,514,(1002 - 514),host,host);
+        /*FileSplit fileSplit = makeSplit(p,0,514,host,host);
+        FileSplit fileSplit1 = makeSplit(p,514,(1002 - 514),host,host);*/
 
         splits.add(fileSplit);
         splits.add(fileSplit1);
