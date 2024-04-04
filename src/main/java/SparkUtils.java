@@ -12,4 +12,9 @@ public class SparkUtils {
 
         return SparkSession.builder().config(conf).getOrCreate();
     }
+
+    public static boolean isDebugMode(){
+     return java.lang.management.ManagementFactory.getRuntimeMXBean().getInputArguments().toString().
+             indexOf("-agentlib:jdwp") > 0;
+    }
 }
